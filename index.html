@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src = ""></script>
+<script src = ""></script>
+<script src = ""></script>
+
+</head>
+<body>
+    <a-scene id = "main-scene">
+        <sky id="main-container"
+        radius="5000"
+        src="./assets/background.jpg"
+        rotation="0 -90 0"></sky>
+        <camera id="camera" wasd-controls="enabled:false;"></camera>
+        <a-entity  id="camera-cursor"
+        cursor
+        position="0 0 -1"
+        geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+        material="color: #283593; shader: flat"></a-entity>
+
+        <a-entity  id="places-container" cursor-listener tour><a-entity>
+            <a-entity id="app-title"
+                position="-0.08 0.73 -1"
+                text="font: exo2bold; align: center; width: 1.5; color: #e91e63; value: MY LOCALITY"></a-entityid></a-entity>
+    </a-scene>
+</body>
+</html>
